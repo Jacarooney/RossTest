@@ -2,15 +2,15 @@ const songs = [];
 
 // Assuming you have an array of sound file paths
 const songFileNames = [
-    "assets/tracks/01_Is This Even Real_MST 8.21.wav",
-    "assets/tracks/02_Sketches of London_MST 8.24.2.wav",
-    "assets/tracks/03_Tied to His Brother_MST 8.21.wav",
-    "assets/tracks/04_Int.Amb._MST 8.24.wav",
-    "assets/tracks/05_Sundawg_MST 8.21.wav",
-    "assets/tracks/06_KordArp_MST 8.24.wav",
-    "assets/tracks/07_ExtAudSeq_MST 8.24.wav",
-    "assets/tracks/08_CouplA Beasts_MST 8.21.wav",
-    "assets/tracks/09_A Nagging_MST 8.21.wav"
+    "assets/tracks/01_Is This Even Real_MST 8.21.mp3",
+    "assets/tracks/02_Sketches of London_MST 8.24.2.mp3",
+    "assets/tracks/03_Tied to His Brother_MST 8.21.mp3",
+    "assets/tracks/04_Int.Amb._MST 8.24.mp3",
+    "assets/tracks/05_Sundawg_MST 8.21.mp3",
+    "assets/tracks/06_KordArp_MST 8.24.mp3",
+    "assets/tracks/07_ExtAudSeq_MST 8.24.mp3",
+    "assets/tracks/08_CouplA Beasts_MST 8.21.mp3",
+    "assets/tracks/09_A Nagging_MST 8.21.mp3"
 ];
 
 // Load sounds into the array
