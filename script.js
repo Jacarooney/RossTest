@@ -215,6 +215,12 @@ function changePage(nextPage) {
         }
     }
 
+    if (currentPage == 2){
+        document.querySelectorAll("pre")[0].style.fontSize = '2.3vh';
+    } else {
+        document.querySelectorAll("pre")[0].style.fontSize = '0.5vw';
+    }
+
 }
 
 window.addEventListener('load', () => {
