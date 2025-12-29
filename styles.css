@@ -72,7 +72,7 @@ h1 {
     box-shadow: inset 1000px 0 0 black;
     /* transition: box-shadow 2s ease-in-out; */
     font-family: 'Cormorant Upright';
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 2.5cqh;
     color: black;
@@ -289,11 +289,12 @@ a {
 }
 
 .speech-bubble {
-    background: linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    background: linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0.2));
     position: absolute;
-    right: 60%;
-    top: 2vh;
+    right: 55%;
+    top: 3vh;
     opacity: 0;
+    font-size: 2vh;
     /* margin: .5em auto; */
     padding: 0.7em;
     width: 8em; height: 4.3em;
@@ -329,7 +330,7 @@ a {
 pre, p{
     font-family: "Cormorant";
     font-weight: 400;
-    transition-duration: 0s;
+    /* transition-duration: 0s; */
 }
 
 pre {
@@ -338,7 +339,7 @@ pre {
     top: 2%;
     left: 0%;
     height: 100%;
-    font-size: 2.3cqh;
+    /* font-size: 2.3cqh; */
 }
 
 p{
