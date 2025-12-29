@@ -64,11 +64,11 @@ h3 {
     top: 72%;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     /* border: 1px solid red; */
 }
 
-h1 { 
+h1 {
     box-shadow: inset 1000px 0 0 black;
     /* transition: box-shadow 2s ease-in-out; */
     font-family: 'Cormorant Upright';
@@ -77,13 +77,13 @@ h1 {
     font-size: 2.5cqh;
     color: black;
     transition: font-weight 3s, transform 1s, box-shadow 1s ease-in-out;
-}  
-
-h1:hover {
-    cursor:pointer;
 }
 
-  .page {
+h1:hover {
+    cursor: pointer;
+}
+
+.page {
     background-color: rgb(255, 255, 243);
     position: relative;
     /* transition-duration: 1s; */
@@ -266,68 +266,78 @@ a {
 }
 
 .bounce-text {
-    animation: bounce 3s infinite ease-in-out; /* Apply the 'bounce' animation, 1s duration, repeat infinitely */
+    animation: bounce 3s infinite ease-in-out;
+    /* Apply the 'bounce' animation, 1s duration, repeat infinitely */
     font-weight: 800;
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0) rotateZ(-0.5deg); /* Start and end at original vertical position */
-  }
-  50% {
-    transform: translateY(-2px) rotateZ(0.5deg); /* Move up 15 pixels at the midpoint */
-  }
+
+    0%,
+    100% {
+        transform: translateY(0) rotateZ(-0.5deg);
+        /* Start and end at original vertical position */
+    }
+
+    50% {
+        transform: translateY(-2px) rotateZ(0.5deg);
+        /* Move up 15 pixels at the midpoint */
+    }
 }
 
 @keyframes bounce2 {
-  0%, 100% {
-    transform: scaleX(-1) translateY(0) rotateZ(0deg); /* Start and end at original vertical position */
-  }
-  50% {
-    transform: scaleX(-1) translateY(-4px) rotateZ(5deg); /* Move up 15 pixels at the midpoint */
-  }
+
+    0%,
+    100% {
+        transform: scaleX(-1) translateY(0) rotateZ(0deg);
+        /* Start and end at original vertical position */
+    }
+
+    50% {
+        transform: scaleX(-1) translateY(-4px) rotateZ(5deg);
+        /* Move up 15 pixels at the midpoint */
+    }
 }
 
 .speech-bubble {
-    background: linear-gradient(270deg, rgba(0,0,0,1), rgba(0,0,0,0.2));
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
     position: absolute;
-    right: 55%;
-    top: 3vh;
     opacity: 0;
-    font-size: 2vh;
-    /* margin: .5em auto; */
     padding: 0.7em;
-    width: 8em; height: 4.3em;
+    width: 8em;
+    height: 4.3em;
     border-radius: .25em;
     transform: rotate(-5deg) rotateY(1deg);
-    /* background: #000; */
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 243);
     text-align: center;
     line-height: 1.1em;
 }
-.speech-bubble:before, .speech-bubble:after {
-  position: absolute;
-  z-index: -1;
-  content: '';
+
+.speech-bubble:before,
+.speech-bubble:after {
+    position: absolute;
+    z-index: -1;
+    content: '';
 }
 
 .speech-bubble:before {
-	position: absolute;
-	right: 0;
-	top: 60%;
-	width: 0;
-	height: 0;
+    position: absolute;
+    right: 0;
+    top: 60%;
+    width: 0;
+    height: 0;
     transform: scale(2, 1.2);
-	border: 20px solid transparent;
-	border-left-color: #000;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -10px;
-	margin-right: -20px;
+    border: 20px solid transparent;
+    border-left-color: #000;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+    margin-right: -20px;
 }
 
-pre, p{
+pre,
+p {
     font-family: "Cormorant";
     font-weight: 400;
     /* transition-duration: 0s; */
@@ -342,7 +352,7 @@ pre {
     /* font-size: 2.3cqh; */
 }
 
-p{
+p {
     /* padding: 5%; */
     /* padding-top: 0; */
     bottom: 25%;
@@ -354,20 +364,26 @@ p{
 
 
 @media (max-aspect-ratio: 4/3) {
-    html, body {
+
+    html,
+    body {
         height: 100%;
-        overflow-y: scroll; /* Force vertical scrollbar */
+        overflow-y: scroll;
+        /* Force vertical scrollbar */
         scroll-snap-type: y mandatory;
         margin: 0;
         padding: 0;
-        position: relative; /* Break the absolute positioning from your main CSS */
+        position: relative;
+        /* Break the absolute positioning from your main CSS */
     }
 
     body {
         display: block;
     }
 
-    .page1, .page2, .page3{
+    .page1,
+    .page2,
+    .page3 {
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -379,56 +395,76 @@ p{
         opacity: 1;
     }
 
-    .sidepage{
+    .speech-bubble {
+        font-size: 2vh;
+        right: 55%;
+        top: 3vh;
+    }
+
+    .sidepage {
         opacity: 1;
         cursor: default;
     }
 
-    .sidepage:hover{
+    .sidepage:hover {
         transform: none;
     }
 
     .head1 {
-    position: absolute;
-    left: -15%;
-    bottom: -15%;
-    height: 55%;
-    
-    /* height: 10%; */
-}
+        position: absolute;
+        left: -15%;
+        bottom: -15%;
+        height: 55%;
+
+        /* height: 10%; */
+    }
 }
 
 @media (min-aspect-ratio: 4/3) {
-    .sidepage{
+    .sidepage {
         opacity: 0.8;
         cursor: pointer;
     }
 
-    .sidepage:hover{
+    .sidepage:hover {
         transform: scale(1.1);
         opacity: 1;
     }
 
     .head1 {
-    position: absolute;
-    left: -15%;
-    bottom: -15%;
-    height: 55%;
-    
-    /* height: 10%; */
-}
+        position: absolute;
+        left: -15%;
+        bottom: -15%;
+        height: 55%;
+
+
+
+        /* height: 10%; */
+    }
+
+    .speech-bubble {
+        font-size: 2vh;
+        right: 55%;
+        top: 3vh;
+    }
 }
 
 @media (max-aspect-ratio: 0.57) {
 
     .head1 {
-    position: absolute;
-    left: -50%;
-    bottom: -15%;
-    height: 55%;
-    
-    /* height: 10%; */
-}
+        position: absolute;
+        left: -50%;
+        bottom: -15%;
+        height: 55%;
+
+        /* height: 10%; */
+    }
+
+    .speech-bubble {
+        font-size: 3.2vw;
+        right: 65%;
+        top: 4vh;
+    }
 
     h1 {
         font-size: 4vw;
