@@ -217,7 +217,9 @@ function changePage(nextPage) {
 
     if (currentPage == 2){
         document.querySelectorAll("pre")[0].style.fontSize = '2.3vh';
-    } else {
+    } else if (isPortrait){
+        document.querySelectorAll("pre")[0].style.fontSize = '2.5vh';
+    } else if (!isPortrait){
         document.querySelectorAll("pre")[0].style.fontSize = '0.5vw';
     }
 
@@ -297,6 +299,18 @@ function windowResize() {
 
         changePage(returnPage);
 
+    }
+
+    if (currentPage == 2){
+        document.querySelectorAll("pre")[0].style.fontSize = '2.3vh';
+    } else if (isPortrait){
+        document.querySelectorAll("pre")[0].style.fontSize = '2.5vh';
+    } else if (!isPortrait){
+        document.querySelectorAll("pre")[0].style.fontSize = '0.5vw';
+    }
+
+    if (window.innerWidth / window.innerHeight < 0.57){
+        document.querySelectorAll("pre")[0].style.fontSize = '4.5vw';
     }
 
     if (window.innerWidth / window.innerHeight < 4 / 3) {
