@@ -349,7 +349,7 @@ pre {
     top: 2%;
     left: 0%;
     height: 100%;
-    /* font-size: 2.3cqh; */
+    font-size: 4vw;
 }
 
 p {
@@ -418,6 +418,11 @@ p {
 
         /* height: 10%; */
     }
+
+    pre {
+        font-size: 2.5vh;
+    }
+
 }
 
 @media (min-aspect-ratio: 4/3) {
@@ -468,5 +473,9 @@ p {
 
     h1 {
         font-size: 4vw;
+    }
+
+    pre {
+        font-size: 4.5vw;
     }
 }
