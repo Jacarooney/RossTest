@@ -333,10 +333,18 @@ scrollContainer.addEventListener('scrollsnapchange', (event) => {
     }
 });
 
+window.onload = function() {
+    for (let i = 0; i < songFileNames.length; i++){
+        setTimeout(function() {
+            document.querySelectorAll("h1")[i].style.boxShadow = "inset 0 0 0 black";
+        }, i*1000*Math.random()+500);
+    }
+};
+
 // window.onload = function() {
 //     if (!hasHovered){
 //     setTimeout(function() {
 //         document.getElementsByClassName('speech-bubble')[0].style.opacity = 100;
-//     }, 5000); // 3000 milliseconds = 3 seconds
+//     }, 5000);
 // }
 // };
